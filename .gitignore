@@ -1,0 +1,33 @@
+# secrets and local config
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# models and data (never commit)
+models/
+data/
+*.npz
+*.onnx
+research/results/raw/
+
+# web
+node_modules/
+web/dist/
+web/public/mediapipe/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

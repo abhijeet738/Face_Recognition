@@ -1,0 +1,12 @@
+# Research environment (T02). Python 3.11.
+# numpy is pinned below 2.0 on purpose: insightface 0.7.3 ships a compiled extension
+# built against NumPy 1.x. The same numpy version must be used in libs/privface_core (T05).
+numpy==1.26.4
+insightface==0.7.3
+onnxruntime==1.19.2
+opencv-python-headless==4.10.0.84
+scikit-learn==1.5.2
+matplotlib==3.9.2
+pyyaml==6.0.2
+tqdm==4.66.5
+jupyter==1.1.1
