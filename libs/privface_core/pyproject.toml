@@ -10,7 +10,8 @@ requires-python = ">=3.11"
 # Dependencies are added by T05-T08. NumPy must be pinned exactly there (SPEC_AMENDMENTS C6).
 # NumPy is pinned exactly (SPEC_AMENDMENTS C6): the same version as research/requirements.txt.
 # cryptography is added in T07 and scikit-learn in T08.
-dependencies = ["numpy==1.26.4"]
+# scikit-learn is only used by metrics.py.
+dependencies = ["numpy==1.26.4", "cryptography>=42", "scikit-learn>=1.4"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
